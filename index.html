@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riya Upadhyay | Finance Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8fa;
+      color: #14213d;
+      line-height: 1.6;
+    }
+
+    a { color: #0b5d4b; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+
+    /* Navigation bar */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 8px;
+      padding: 16px 24px; background: white;
+      border-bottom: 1px solid #e2e6ec;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .logo { font-weight: 700; color: #14213d; }
+    .nav-links a { margin-left: 18px; color: #5c6678; }
+    .nav-links a:first-child { margin-left: 0; }
+
+    /* Page sections */
+    header, section, footer {
+      max-width: 960px; margin: 0 auto; padding: 60px 24px;
+    }
+    header { padding-top: 90px; padding-bottom: 70px; }
+    .label {
+      display: inline-block; font-size: 0.85rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      color: #0b5d4b; background: #e3f2ee;
+      padding: 4px 12px; border-radius: 999px; margin-bottom: 16px;
+    }
+    h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 14px; }
+    h2 { font-size: 1.6rem; margin-bottom: 6px; }
+    .intro { color: #5c6678; margin-bottom: 24px; }
+    .statement { font-size: 1.2rem; color: #5c6678; max-width: 720px; }
+    .buttons { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 10px 20px; border-radius: 8px;
+      border: 1px solid #0b5d4b;
+    }
+    .btn-main { background: #0b5d4b; color: white; }
+    .btn-main:hover { text-decoration: none; opacity: 0.9; }
+    .btn-outline:hover { text-decoration: none; background: #e3f2ee; }
+
+    /* Skills */
+    .skill-groups {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .skill-group {
+      background: white; border: 1px solid #e2e6ec;
+      border-radius: 12px; padding: 20px;
+    }
+    .skill-group h3 { margin-bottom: 12px; font-size: 1.05rem; }
+    .tag {
+      display: inline-block; margin: 0 6px 8px 0;
+      background: #e3f2ee; color: #0b5d4b;
+      padding: 4px 12px; border-radius: 999px; font-size: 0.9rem;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white; border: 1px solid #e2e6ec;
+      border-radius: 12px; padding: 22px;
+      display: flex; flex-direction: column;
+    }
+    .project h3 { margin-bottom: 8px; }
+    .project p { color: #5c6678; margin-bottom: 12px; }
+    .project .desc { flex-grow: 1; }
+    .tools { font-size: 0.9rem; }
+
+    /* Footer */
+    footer { text-align: center; border-top: 1px solid #e2e6ec; }
+    footer p { color: #5c6678; margin-bottom: 14px; }
+    footer a { margin: 0 10px; }
+    .copyright { margin-top: 20px; font-size: 0.85rem; }
+
+    /* Phones */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.9rem; }
+      .statement { font-size: 1.05rem; }
+      .nav-links a { margin-left: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <span class="logo">Riya Upadhyay</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- 1. Personal Statement -->
+  <header id="about">
+    <span class="label">Finance Major</span>
+    <h1>Hi, I'm Riya Upadhyay.</h1>
+    <p class="statement">
+      I am an undergraduate finance student who wants to analyze financial statements and company performance to turn numbers into clear strategies and data driven recommendations for the business.
+    </p>
+    <div class="buttons">
+      <a class="btn btn-main" href="#projects">View my projects</a>
+      <a class="btn btn-outline" href="#contact">Contact me</a>
+    </div>
+  </header>
+
+  <!-- 2. Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p class="intro">What I bring to finance and business analyst roles.</p>
+    <div class="skill-groups">
+
+      <div class="skill-group">
+        <h3>Finance &amp; Analysis</h3>
+        <span class="tag">Financial Statement Analysis</span>
+        <span class="tag">Financial Ratio Analysis</span>
+        <span class="tag">Company &amp; Industry Analysis</span>
+        <span class="tag">Corporate Strategy</span>
+        <span class="tag">Budgeting &amp; Forecasting</span>
+      </div>
+
+      <div class="skill-group">
+        <h3>Technical Tools</h3>
+        <span class="tag">Microsoft Excel</span>
+        <span class="tag">Excel Formulas &amp; Charts</span>
+        <span class="tag">PowerPoint</span>
+        <span class="tag">Microsoft Word</span>
+        <span class="tag">HTML &amp; CSS</span>
+        <span class="tag">GitHub</span>
+      </div>
+
+      <div class="skill-group">
+        <h3>Professional Skills</h3>
+        <span class="tag">Critical Thinking</span>
+        <span class="tag">Organization/Time Management</span>
+        <span class="tag">Business Writing</span>
+        <span class="tag">Presentation</span>
+        <span class="tag">Teamwork</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="intro">My coursework and projects.</p>
+    <div class="projects">
+
+      <div class="project">
+        <h3>Financial Ratio Analysis</h3>
+        <p class="desc">Analyzed a company's financial statements by calculating and interpreting key ratios for profitability, liquidity, efficiency, and leverage. Compared results across years and against industry benchmarks to assess the company's financial health and identify strengths and risks.</p>
+        <p class="tools">Tools: Excel, Financial Statements</p>
+        <a href="ratio-analysis.pdf" target="_blank">View project →</a>
+      </div>
+
+      <div class="project">
+        <h3>Kroger Company Analysis</h3>
+        <p class="desc">Evaluated The Kroger Co.'s financial performance and competitive position in the U.S. grocery industry. Reviewed its financial results, business strategy, and key competitors to assess its strengths, challenges, and outlook.</p>
+        <p class="tools">Tools: Excel, PowerPoint, company annual reports</p>
+        <a href="kroger-analysis.pdf" target="_blank">View project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Open to internships and entry-level opportunities in finance.</p>
+    <a href="mailto:upadhyayriya22@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/riya-upadhyay90/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/riyaupadhyay01" target="_blank">GitHub</a>
+    <p class="copyright">© 2026 Riya Upadhyay</p>
+  </footer>
+
+</body>
+</html>
